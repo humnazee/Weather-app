@@ -7,7 +7,6 @@ const Shoe= require('../models/shoe')
 
 router.get('/top', (req, res) => {
     const weather = req.query.weather;
-    console.log('I am weather'+ weather)
     Top
         .findAll(weather)
         .then(tops => res.json(tops))

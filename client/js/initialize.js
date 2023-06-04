@@ -2,8 +2,6 @@ const state ={}
 let user_collection;
 let div = document.querySelector(".data");
 let logoutBtn = document.querySelector('.logout-btn');
-let signupBtn = document.querySelector('.signup-btn')
-let loginBtn = document.querySelector('.login-btn')
 
 
 
@@ -43,7 +41,6 @@ fetch(`/api/suggestions/shoe?weather=${weather_type}`)
 fetch('/api/collection')
   .then(res => res.json())
   .then(collecton => {
-    console.log('I am printing collections')
     state.collection = collecton
     user_collection = state.collection
     readCollection()
@@ -56,20 +53,16 @@ fetch('/api/sessions')
   .then(data => {
     if (data.result === 'successful') {
       state.loggedInUser = data.email
-      
       div.style.display = 'block'; 
-      console.log('already logged in')
       getLocation()
       
       // Remove the "hidden" class
       logoutBtn.classList.remove('hidden');
-      signupBtn.classList.add('hidden');
-      loginBtn.classList.add('hidden')
 
 
     } else{
 
-      console.log('HElllo')
+      renderLogin()
     }
 })
 
@@ -88,6 +81,8 @@ function renderMainContent(){
       </div>
       <div class="read-collection">
         <select name="" id="drop-down"></select>
+        <button onclick="getCollection()">Get Collection</button>
+
       </div>
     </div>`
   }

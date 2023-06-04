@@ -83,14 +83,12 @@ function btm_nextImage() {
 
 function revealCarousel_Bottom(){
     renderBottoms()
-    console.log(bottom_images)
     renderBottomsList()
     reveal_bottom_img()    
 }
 
 function reveal_bottom_img(){
     bottom_imageElement = document.querySelector('#btm_carousel__image');
-    console.log(bottom_imageElement)
     bottom_imageElement.src = bottom_images[bottom_currentIndex]['image_url']
 }
 
@@ -126,14 +124,12 @@ function top_nextImage() {
 
 function revealCarousel_top(){
     renderTops()
-    console.log(top_images)
     renderTopsList()
     reveal_top_img()    
 }
 
 function reveal_top_img(){
     top_imageElement = document.querySelector('#top_carousel__image');
-    console.log(top_imageElement)
     top_imageElement.src = top_images[top_currentIndex]['image_url']
 }
 
@@ -167,13 +163,11 @@ function shoe_nextImage() {
 
 function revealCarousel_shoe(){
     renderShoes()
-    console.log(shoe_images)
     renderShoesList()
     reveal_shoe_img()    
 }
 
 function reveal_shoe_img(){
     shoe_imageElement = document.querySelector('#shoe_carousel__image');
-    console.log(shoe_imageElement)
     shoe_imageElement.src = shoe_images[shoe_currentIndex]['image_url']
 }

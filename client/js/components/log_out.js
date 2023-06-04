@@ -9,8 +9,8 @@ function logOut() {
       state.loggedInUser = null
 
     logoutBtn.classList.add('hidden');
-    signupBtn.classList.remove('hidden');
-    loginBtn.classList.remove('hidden');
+    
+    reloadPage()
       
       renderLogin()
     } else {

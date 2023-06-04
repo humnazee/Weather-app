@@ -1,20 +1,35 @@
 function renderLogin() {
   div.style.display = 'none';
     document.querySelector('#page').innerHTML = `
-      <section class='log-in'>
-        <form action="" onSubmit="logIn(event)">
-          <h2>Login:</h2>
-          <fieldset>
-            <label for="">Email: </label>
-            <input type="text" name="email">
-          </fieldset>
-          <fieldset>
-            <label for="">Password: </label>
-            <input type="password" name="password">
-          </fieldset>
-          <button>Log in</button>
-        </form>
-      </section>
+    <div class="container">
+    <div class="left">
+      <img src="right.jpg" alt="Logo" />
+    </div>
+    <div class="right">
+      <div class="logo">
+          <h2>Weather Fit & Co</h2>
+      </div>
+      <div class="form">
+          <div class="login-form">
+            <form action="" onSubmit="logIn(event)">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <input type="submit" value="Login" />
+
+            <p class="signup-link">New Here? <a href="#" onclick="renderSignUp()">Please Sign Up</a></p>
+          </form>
+        </div>
+      </div>
+      <footer>
+          <span>Weather fit & co</span>
+      </footer>
+      
+    </div>
+  </div>
     `
   }
   

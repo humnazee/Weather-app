@@ -11,8 +11,6 @@ router.post("/create", (req, res) => {
     const name = req.body.collection_input;
     const user_id = 1;
 
-    console.log(`${top_id} AND ${bottom_id} AND ${shoe_id} AND ${weather} AND ${name}`)
-
 
     Collection.create(name, weather, user_id, top_id, bottom_id, shoe_id)
         .then(name => res.json(name))
@@ -20,9 +18,37 @@ router.post("/create", (req, res) => {
         console.error('Database error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
   });
-
   });
 
+
+router.get('/read', (req, res)=> {
+    const collection_id = req.query.id;
+    Collection.findCollectionByCollectionId(collection_id).then(collection_id => res.json(collection_id))
+
+}
+);
+
+
+router.post('/update', (req, res) => {
+    const id = req.query.id;
+    const name = req.body.collection_input;
+
+    Collection.updateById(id, name)
+        .then(() => res.json({ success: true }))
+        .catch(error => {
+        console.error('Database error:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    });
+    });
+
+
+
+router.delete('/delete', (req, res)=> {
+    const collection_id = req.query.id;
+    Collection.deleteById(collection_id).then(collection_id => res.json(collection_id))
+
+}
+);
 
 router.get('/', (req, res)=> {
     const user_id = 1;
@@ -30,5 +56,7 @@ router.get('/', (req, res)=> {
 
 }
 );
+
+
   
 module.exports = router
