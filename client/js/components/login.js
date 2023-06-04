@@ -36,8 +36,15 @@ function renderLogin() {
           renderError(res.error)
         } else {
           state.loggedInUser = res
+          init(weather_type)
+          
+          
+          //new
         }
       })
+      .catch(error => {
+        renderError('error!!');
+      });
   }
   
   function renderError(errorMessage) {

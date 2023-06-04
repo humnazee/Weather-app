@@ -17,9 +17,13 @@ function renderSignUp() {
           </fieldset>
           <button>Sign Up</button>
         </form>
+        <h3>Already have an account?</h3>
+      <button onClick="renderLogin()">Log In</button>
+    </section>
       </section>
     `
   }
+  
   
   function signUp(event) {
     event.preventDefault()
@@ -34,5 +38,11 @@ function renderSignUp() {
       body: JSON.stringify(data)
     })
     .then(res => res.json())
-    .then(email => state.loggedInUser = email)
+    .then((email) => {
+      state.loggedInUser = email
+    // renderLogin();
+    renderLogin();
+    });
+    //new
+    // .then(() => )
   }

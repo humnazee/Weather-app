@@ -40,5 +40,4 @@ What I would do differently if I could wind back the clock...
 
 ## :white_check_mark: Future features
 Cool things I would add if I can keep working on this
-- Search functionality to allow users to search for specific books.
-- Sorting and filtering options for better book organization.
+- 
