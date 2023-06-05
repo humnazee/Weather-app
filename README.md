@@ -64,3 +64,4 @@ In-app screenshots:
 - Add an accessories carousel for users to select from.
 - Allow users to input their location, display the current weather, and suggest appropriate tops, bottoms, and shoes based on that location's weather.
 - Incorporate more specific weather conditions like rainy, mostly cloudy, etc., and provide clothing suggestions accordingly.
+
