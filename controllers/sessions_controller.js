@@ -48,6 +48,7 @@ router.delete('/', (req, res) => {
         console.error(err)
         res.status(500).json({ error: 'Could not logout' })
       } else {
+        res.clearCookie('user_sid')
         res.json({ success: true })
       }
     })

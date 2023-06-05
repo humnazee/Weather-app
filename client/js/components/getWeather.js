@@ -15,6 +15,7 @@ function getLocation() {
   }
 }
 
+//this should be in backend
 function showPosition(position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
@@ -60,4 +61,6 @@ function checkWeth(temp) {
 
   init(weather_type)
 }
+
+    
 
