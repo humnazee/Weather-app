@@ -47,7 +47,7 @@ function renderClimateWidget(data){
   div.innerHTML = `
     <h2>${data.location.name}</h2>
     <img src="${data.current.condition.icon}">
-    <p>${data.current.temp_c} Celcius</p>`;
+    <p>${data.current.temp_c} °C</p>`;
 }
 
 function checkWeth(temp) {
