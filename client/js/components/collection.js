@@ -23,7 +23,7 @@ function createCollection(event){
           }).then(res => res.json()).then(reloadPage())
 }
 
-
+//collection list displayed in html using forEach loop
 function readCollection(event){
 
     const dropDown = document.querySelector('#drop-down')
@@ -39,7 +39,7 @@ function readCollection(event){
 
 }
 
-
+// When user clicks on get collection (single collection) from dropdown
 function getCollection(){
     const dropDown = document.querySelector('#drop-down')
     const collection_id = dropDown.value;
@@ -50,15 +50,8 @@ function getCollection(){
   .then(res => res.json()).then(data => {
 
     one_collection = data[0];
-
-
     displayCollection(one_collection)
-
-
     }
-
-  
-  
   )
   
 }

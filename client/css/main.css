@@ -64,7 +64,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #F9F3EC;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -138,7 +138,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E4E4E4;
+  background-color: #F9F3EC;
   gap: 10px;
   padding: 10px 0;
 }
