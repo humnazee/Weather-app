@@ -76,7 +76,7 @@ function displayCollection(data){
     <div class="controls">
       <div class="update-collection">
         <form action="" onSubmit="updateById(event, ${data.collection_id} )">
-        <input type="text" name="collection_input" placeholder="update collection name..." value="${data.collection_name}">
+        <input class="text-box" type="text" name="collection_input" placeholder="update collection name..." value="${data.collection_name}">
           <button>Update Collection</button>
       </form>
 

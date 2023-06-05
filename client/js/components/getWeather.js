@@ -50,7 +50,7 @@ function renderClimateWidget(data){
 }
 
 function checkWeth(temp) {
-  if (temp < 15) {
+  if (temp <= 15) {
     weather_type = "winter";
   } else if (temp > 15 && temp < 25) {
     weather_type = "moderate";
