@@ -68,6 +68,6 @@ In-app screenshots:
 ## :white_check_mark: Future features
 - our future plan is to add a request message to enable users current location.
 - Add an accessories carousel for users to select from.
-- Allow users to input their location, display the current weather, and suggest appropriate tops, bottoms, and shoes based on that location's weather.
+- Allow users to input their location, display the current weather, and suggest appropriate attire based on that location's weather.
 - Incorporate more specific weather conditions like rainy, mostly cloudy, etc., and provide clothing suggestions accordingly.
 
