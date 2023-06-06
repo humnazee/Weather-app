@@ -30,6 +30,7 @@ In-app screenshots:
 ![project.png](https://raw.githubusercontent.com/humnazee/Weather-app/7d93fa59da1d18b6d4c88ad8c57b3f146ee8cc6e/home.png)
 
 ## :User Stories
+- User needs to allow their browser to access their location as we are using current location to get weather.
 - User can create an account by providing their username, email address and setting a secure password, so that user can start app.
 - As a registered user, user can log in to the app using their username and password,and can access personalized features and data.
 - App can automatically detect users location and display the weather information, so that user don't need to manually enter their location every time.
@@ -65,6 +66,7 @@ In-app screenshots:
 - Improved planning would have been beneficial.
 
 ## :white_check_mark: Future features
+- our future plan is to add a request message to enable users current location.
 - Add an accessories carousel for users to select from.
 - Allow users to input their location, display the current weather, and suggest appropriate tops, bottoms, and shoes based on that location's weather.
 - Incorporate more specific weather conditions like rainy, mostly cloudy, etc., and provide clothing suggestions accordingly.
