@@ -38,10 +38,6 @@ In-app screenshots:
 - User can access on multiple devices (such as desktop, mobile, and tablets), so that user can access the weather information and attire suggestion from anywhere.
 
 ## :pencil2: Planning & Problem Solving
-- Struggling with asynchronous javascript.
-- Git hub workflow.
-
-## :pencil2: Planning & Problem Solving
 - For our planning phase of the Weather Attire App, We focused on defining the app's requirements and features, which includes the different attire categories for summer, moderate, and winter weather. We also created basic wireframes and UI/UX to visualize the app's structure and logic.
 
 ![Wireframing](https://raw.githubusercontent.com/arisa010/Weather-app/de10b5040513e5bf7789385026d7c44d3541c99d/image%20(1).png)
