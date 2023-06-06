@@ -28,6 +28,14 @@ In-app screenshots:
 
 - Home page
 ![project.png](https://raw.githubusercontent.com/humnazee/Weather-app/7d93fa59da1d18b6d4c88ad8c57b3f146ee8cc6e/home.png)
+## :User Stories
+User can create an account by providing their username, email address and setting a secure password, so that user can start app.
+As a registered user, user can log in to the app using their username and password,and can access personalized features and data.
+App can automatically detect users location and display the weather information, so that user don't need to manually enter their location every time.
+User can make clothing collection according to weather type and can save their collection.This collection can be update collection name or delete aswell.
+This app is providing a user-friendly and visually appealing interface, so that user can easily navigate and understand the weather information.
+User can access on multiple devices (such as desktop, mobile, and tablets), so that user can access the weather information an
+ d attire suggestion from anywhere.
 ## :pencil2: Planning & Problem Solving
 - Struggling with asynchronous javascript.
 - Git hub workflow.
