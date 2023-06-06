@@ -63,7 +63,6 @@ In-app screenshots:
 
 ## :sob: Lessons learnt
 - Improved planning would have been beneficial.
-- File organization could have been better.
 
 ## :white_check_mark: Future features
 - Add an accessories carousel for users to select from.
